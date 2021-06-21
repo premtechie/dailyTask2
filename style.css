@@ -1,0 +1,362 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+.Wrapper{
+
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    color: white;
+    height: 100px;
+}
+.logo{
+    width: 50%;
+}
+.title{
+    margin-left: 50px;
+    width: 102px;
+    height: 16px;
+    font-family: Crimson Pro;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 5px;
+    border: 1px solid white;
+}
+
+.tabs{
+    width: 50%;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    color: white;
+    justify-content: space-between;
+    margin-right: 30px;
+}
+.tabItems{
+    height: 22px;
+    font-family:sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    margin-right: 50px;
+}
+.menu{
+    display: none;
+}
+
+#active {
+    border-bottom: 2px solid white;
+}
+
+.section1{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+.heading{
+    width: 365px;
+    height: 61px;
+    font-family: Lora;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 61px;
+    color: #FFFFFF;
+}
+.text {
+    width: 410px;
+    height: 145px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
+.read{
+    width: 103px;
+    height: 22px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.content{
+    width: 90%;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.section2{
+    width: 55%;
+    position: relative;
+}
+.imgContainer{
+    width: 100%;
+}
+.mainImg{
+    margin: 50px 0px;
+    width: 100%;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.card{
+    position: absolute;
+    width: 60%;
+    top: 70%;
+    left: 30%;
+    height: 189px;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    /* border: 1px solid white; */
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.profile{
+    display: flex;
+    align-items: center;
+    margin: 0px 30px;
+    height: 72px;
+}
+.pic{
+    width: 50px;
+    border-radius: 50%;
+}
+.profileData{
+    margin: 0px 20px;
+}
+.username{
+    height: 17px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    margin: 5px 0;
+}
+.userPosition {
+    width: 102px;
+    height: 15px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #828282;
+}
+.userData {
+    height: 62px;
+    font-family: Lora;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;
+    color: #FFFFFF;
+    margin: 20px 30px;
+}
+.sign{
+    height: 17px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #A9A9A9;
+    margin: 10% 0 30px 0;
+}
+
+.sidebar{
+    display: none;
+}
+
+@media(max-width:500px){
+    .Wrapper{
+        width: 100%;
+    }
+    
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: black;
+        color: white;
+        height: 100px;
+    }
+    .logo{
+        width: 50%;
+    }
+    .title{
+        margin-left: 10%;
+        height: 16px;
+        font-family: Crimson Pro;
+        font-style: normal;
+        font-weight: 200;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    
+    .tabs{
+        display: none;
+    }
+    .menu{
+        display: block;
+        margin-right: 5%;
+    }
+    .content{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .section1{
+        width: 90%;
+    }
+    .heading{
+        width: 100%;
+        height: 46px;
+        font-family: Lora;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 46px;
+    }
+    .text {
+        width: 250px;
+        height: 85px;
+        left: 12px;
+        top: 159px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .read{
+        font-size: 14px;
+        line-height: 17px;
+    }
+    
+    .section2{
+        width: 100%;
+        position: relative;
+    }
+    .imgContainer{
+        width: 100%;
+    }
+    .mainImg{
+        margin: 20px;
+        width: 90%;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+    
+    .card{
+        position: absolute;
+        top: 60%;
+        left: 18%;
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        width: 70%;
+        height: 138px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .profile{
+        display: flex;
+        align-items: center;
+        margin: 20px 20px 0px;
+        height: 52px;
+    }
+    .pic{
+        width: 50px;
+        border-radius: 50%;
+    }
+    .profileData{
+        margin: 0px 20px;
+    }
+    .username{
+        height: 12px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        color: #FFFFFF;
+        margin: 5px 0;
+    }
+    .userPosition {
+        width: 102px;
+        height: 10px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 12px;
+        color: #828282;
+    }
+    .userData {
+        height: 45px;
+        font-family: Lora;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 23px;
+        color: #FFFFFF;
+        margin: 20px;
+    }
+    .sign{
+        margin: 0;
+        position: absolute;
+        bottom: 10px;
+        left: 25%;
+    }  
+    .sidebar.active{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: black;
+        position: absolute;
+        top: 0;
+        z-index: 100;
+        animation: fade-slide-in 0.3 ease-in forwards;
+    } 
+    .close{
+        position: absolute;
+        top: 35px;
+        right: 20px;
+    }
+    .elements {
+        margin: 10px 0px;
+        height: 22px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+        color: #FFFFFF;
+    }
+
+}
